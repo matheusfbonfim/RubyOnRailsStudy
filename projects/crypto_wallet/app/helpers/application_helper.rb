@@ -9,10 +9,15 @@ module ApplicationHelper
       "CRYPTO WALLET APPS"
     end 
 
-  
-
-
-
-
+    # Retorna ambiente atual do Rails
+    def ambiente_rails
+        if Rails.env.development?
+            "Desenvolvimento"
+        elsif
+            "Produção"
+        else
+            "Teste"
+        end
+    end
 
 end
