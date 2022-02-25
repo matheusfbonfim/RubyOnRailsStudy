@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<p> <strong> Data: <%= data_br(Date.today) %> </strong> </p>
+
+<h1 style = "text-align:center;"><%= nome_aplicacao %></h1>
+
+<h1>Coins</h1>
+
+<div id="coins">
+  <% @coins.each do |coin| %>
+    <div style="border: 1px solid black; margin-bottom: 30px" class = "<%=coin.id%>">
+      <p> <%=image_tag coin.url_image, width:100, height:50%> </p>
+      <p><%= coin.description %></p>
+      <p><%= coin.acronym %></p>
+      
+      <p>
+        <%= link_to "Show this coin", coin %>
+      </p>
+      <br><br>
+    </div>
+  <% end %>
+</div>
+
+<br><br>
+
+<%= link_to "New coin", new_coin_path %>
+
+<br><br>
+
+<%= link_to "Back to Home", welcome_index_path %>
