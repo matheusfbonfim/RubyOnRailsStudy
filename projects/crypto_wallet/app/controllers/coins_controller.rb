@@ -5,7 +5,7 @@ class CoinsController < ApplicationController
   # GET /coins or /coins.json
   def index
     # Pega todas as moedas -> Banco de dados -> Tabela
-    @coins = Coin.all
+    @coins = Coin.all # Coin -> Model Coin / Coin.all -> Array de elementos do banco de dados
     # Dispara na sequência o arquivo da view com o mesmo nome -> app/views/coins/index.html
   end
 

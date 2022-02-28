@@ -7,15 +7,19 @@
 <h1>Coins</h1>
 
 <div id="coins">
+  <%# Faz um each ou seja, cada um de coin %>
   <% @coins.each do |coin| %>
     <div style="border: 1px solid black; margin-bottom: 30px" class = "<%=coin.id%>">
-      <p> <%=image_tag coin.url_image, width:100, height:50%> </p>
+      <p><%=image_tag coin.url_image, width:100, height:50%></p>
       <p><%= coin.description %></p>
       <p><%= coin.acronym %></p>
       
-      <p>
-        <%= link_to "Show this coin", coin %>
-      </p>
+      <p><%= link_to 'Mostrar', coin %></p>
+      <p><%= link_to 'Editar', edit_coin_path(coin) %></p>
+      <p><%= link_to 'Apagar', coin, method: :delete, data: { confirm: 'Tem certeza?' } %></p>
+      <%# No mostrar e apagar é inferido automaticamente quando se coloca coin que na verdade
+      esta querendo se dizer coin_path(coin.id), ou seja, especificando o elemento %>
+    
       <br><br>
     </div>
   <% end %>
