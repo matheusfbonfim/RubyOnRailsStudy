@@ -1,3 +1,4 @@
+<%# Notice -> Usado por exemplo quando é apagado alguma moeda, e avisa/noticiar o que aconteceu %>
 <p style="color: green"><%= notice %></p>
 
 <p> <strong> Data: <%= data_br(Date.today) %> </strong> </p>
@@ -16,7 +17,7 @@
       
       <p><%= link_to 'Mostrar', coin %></p>
       <p><%= link_to 'Editar', edit_coin_path(coin) %></p>
-      <p><%= link_to 'Apagar', coin, method: :delete, data: { confirm: 'Tem certeza?' } %></p>
+      <%= button_to "Destroy this coin", coin, method: :delete, data: {confirm: "Tem certeza que quer excluir?"} %>
       <%# No mostrar e apagar é inferido automaticamente quando se coloca coin que na verdade
       esta querendo se dizer coin_path(coin.id), ou seja, especificando o elemento %>
     

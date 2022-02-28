@@ -1,6 +1,13 @@
 class CoinsController < ApplicationController
+  # Renderiza um template/layout específico para coins
   layout "adm"
+
+  # Coloca uma ação do método set_coin antes de executar o show, edit, update e destroy
+  # Proporciona reaproveitamento de código
   before_action :set_coin, only: %i[ show edit update destroy ]
+
+  #################################################3
+  # ACTIONS
 
   # GET /coins or /coins.json
   def index
@@ -15,7 +22,8 @@ class CoinsController < ApplicationController
 
   # GET /coins/new
   def new
-    @coin = Coin.new
+    @coin = Coin.new # Instanciando um model e jogando na variavel 
+                     # Contem todos dados da moeda vazio
   end
 
   # GET /coins/1/edit
@@ -24,7 +32,8 @@ class CoinsController < ApplicationController
 
   # POST /coins or /coins.json
   def create
-    @coin = Coin.new(coin_params)
+    # Coins params faz chegar somente os parametros necessários
+    @coin = Coin.new(coin_params) # Cria uma nova moeda
 
     respond_to do |format|
       if @coin.save
@@ -52,8 +61,12 @@ class CoinsController < ApplicationController
 
   # DELETE /coins/1 or /coins/1.json
   def destroy
+    # O @coin nesse momento já esta selecionado devido ao set_coin
+    # Posteriormente é destruído
     @coin.destroy
 
+    # Format refere-se ao formato da url -> Ex: http://127.0.0.1:3000/coins.json
+    # O respond_to é para responder para os formatos html e json
     respond_to do |format|
       format.html { redirect_to coins_url, notice: "Coin was successfully destroyed." }
       format.json { head :no_content }
@@ -64,10 +77,14 @@ class CoinsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_coin
       @coin = Coin.find(params[:id])
+      # puts "ENCONTRADO -> #{Coin.find(params[:id])}"
     end
 
     # Only allow a list of trusted parameters through.
     def coin_params
+      # Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"description"=>"Dash", "acronym"=>"DASH", "url_image"=>"https://s2.coinmarketcap.com/static/img/coins/200x200/131.png"}, "commit"=>"Create Coin"}
+      # Pega exatamente o coin 
+      # Pega exatamente os tres elementos 
       params.require(:coin).permit(:description, :acronym, :url_image)
     end
 end
