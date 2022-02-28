@@ -2,24 +2,19 @@
 
 <p> <strong> Data: <%= data_br(Date.today) %> </strong> </p>
 
-<ul>
-    <%# SEM O RUBY %>
-    <%# <li>
-        <a href="/coins"> Cadastro de Moedas </a>
-    </li> %>
-    <li>
-      <%= link_to("Cadastro de Moedas", coins_path) %>
-    </li>
-</ul>
+<%######################################################################  %>
+<%# Chamando o partial menu %>
+<%# Procura uma partial chamada por _menu e renderiza essa parte aqui %>
+<%= render("menu") %> 
 
 <p> 
   Você está no ambiente de <strong><%=ambiente_rails%></strong>
 </p>
 
 <p> 
-  Eu sou uma variável de instância/sessão <%= @nome %>
+  Eu sou uma variável de instância/sessão <strong style="color:red;"> <%= @my_name %> </strong>
 </p>
 
 <p> 
-  Meu curso é o curso de <%=@curso%>
+  Meu curso é o curso de <strong style="color: blue;"> <%=@curso%> </strong>
 </p>
