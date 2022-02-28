@@ -2,6 +2,8 @@ class CoinsController < ApplicationController
   # Renderiza um template/layout específico para coins
   layout "adm"
 
+  #################################################3
+  # AFILTROS
   # Coloca uma ação do método set_coin antes de executar o show, edit, update e destroy
   # Proporciona reaproveitamento de código
   before_action :set_coin, only: %i[ show edit update destroy ]
@@ -83,8 +85,8 @@ class CoinsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def coin_params
       # Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"description"=>"Dash", "acronym"=>"DASH", "url_image"=>"https://s2.coinmarketcap.com/static/img/coins/200x200/131.png"}, "commit"=>"Create Coin"}
-      # Pega exatamente o coin 
-      # Pega exatamente os tres elementos 
-      params.require(:coin).permit(:description, :acronym, :url_image)
+      # Pega exatamente o coin - Pega exatamente os tres elementos
+      # Traz segurança -> Evita ser enviado dados que não são necessários
+      params.require(:coin).permit(:description, :acronym, :url_image) # Indica quais os campos para serem manipulados pelo controller
     end
 end

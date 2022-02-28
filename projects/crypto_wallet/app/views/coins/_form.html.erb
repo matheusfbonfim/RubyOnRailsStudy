@@ -1,4 +1,5 @@
 <%= form_with(model: coin, local: true) do |form| %>
+  <%# Verifica possiveis erros %>
   <% if coin.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(coin.errors.count, "error") %> prohibited this coin from being saved:</h2>
@@ -11,18 +12,19 @@
     </div>
   <% end %>
 
+  <%# Verifica os labels do formulário %>
   <div>
-    <%= form.label :description, style: "display: block" %>
+    <%= form.label :description, "Descrição: ", style: "display: block" %>
     <%= form.text_field :description %>
   </div>
 
   <div>
-    <%= form.label :acronym, style: "display: block" %>
+    <%= form.label :acronym, "Acrônimo: " ,style: "display: block" %>
     <%= form.text_field :acronym %>
   </div>
 
   <div>
-    <%= form.label :url_image, style: "display: block" %>
+    <%= form.label :url_image, "Link da imagem: ", style: "display: block" %>
     <%= form.text_field :url_image %>
   </div>
 
