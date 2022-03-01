@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mining_types
   # Indica o metodo GET -> Primeiro o controller e depois a action
   get 'welcome/index'# , to: 'welcome#index' # -> Infere que atraves do path quem é o parametro e a action
   # get('/inicio', to: 'welcome#index')
