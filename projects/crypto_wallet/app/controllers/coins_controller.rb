@@ -87,6 +87,6 @@ class CoinsController < ApplicationController
       # Parameters: {"authenticity_token"=>"[FILTERED]", "coin"=>{"description"=>"Dash", "acronym"=>"DASH", "url_image"=>"https://s2.coinmarketcap.com/static/img/coins/200x200/131.png"}, "commit"=>"Create Coin"}
       # Pega exatamente o coin - Pega exatamente os tres elementos
       # Traz segurança -> Evita ser enviado dados que não são necessários
-      params.require(:coin).permit(:description, :acronym, :url_image) # Indica quais os campos para serem manipulados pelo controller
+      params.require(:coin).permit(:description, :acronym, :url_image, :mining_type_id) # Indica quais os campos para serem manipulados pelo controller
     end
 end

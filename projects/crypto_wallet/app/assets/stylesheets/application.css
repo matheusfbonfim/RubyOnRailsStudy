@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+ body{
+    font-family: 'JetBrains Mono', monospace;
+ }
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.field{
+  padding: 10px;
+  
+}

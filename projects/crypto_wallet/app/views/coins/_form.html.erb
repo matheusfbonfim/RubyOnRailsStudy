@@ -1,3 +1,4 @@
+
 <%= form_with(model: coin, local: true) do |form| %>
   <%# Verifica possiveis erros %>
   <% if coin.errors.any? %>
@@ -13,27 +14,28 @@
   <% end %>
 
   <%# Verifica os labels do formulário %>
-  <div>
-    <%= form.label :description, "Descrição: ", style: "display: block" %>
+  <div class="field">
+    <%= form.label :description, "DESCRIÇÃO: ", style: "display: block" %>
     <%= form.text_field :description %>
   </div>
 
-  <div>
-    <%= form.label :acronym, "Acrônimo: " ,style: "display: block" %>
+  <div class="field">
+    <%= form.label :acronym, "ACRÔNIMO: " ,style: "display: block" %>
     <%= form.text_field :acronym %>
   </div>
 
-  <div>
-    <%= form.label :url_image, "Link da imagem: ", style: "display: block" %>
+  <div class="field">
+    <%= form.label :url_image, "LINK DA IMAGEM: ", style: "display: block" %>
     <%= form.text_field :url_image %>
   </div>
 
-  <div>
+  <div class="field">
+    <%= form.label :mining_type, "MINING TYPE: ", style: "display: block" %>
     <%= form.select("mining_type_id", MiningType.all.collect {|m| [ m.description, m.id ] }, { include_blank: 'Selecione...' }) %>
   </div>
   
 
-  <div>
+  <div class="field">
     <%= form.submit %>
   </div>
 <% end %>
