@@ -15,12 +15,11 @@ namespace :dev do
       end
       
       show_spinner("Criando BD ...") { %x(rails db:create) } 
-
       show_spinner("Migrando BD ...") { %x(rails db:migrate) } 
-
-      %x(rails dev:add_coins) 
-      %x(rails dev:add_mining_types) 
-
+      
+      %x(rails dev:add_mining_types) # Cadastra os tipos de mineração
+      %x(rails dev:add_coins)        # Cadastra as moedas
+      
     else
       puts "Você não está em ambiente de desenvolvimento!"
     end
@@ -36,27 +35,32 @@ namespace :dev do
         {
           description: "Bitcoin",
           acronym: "BTC",
-          url_image: "https://logos-world.net/wp-content/uploads/2020/08/Bitcoin-Emblem.png"
+          url_image: "https://logos-world.net/wp-content/uploads/2020/08/Bitcoin-Emblem.png",
+          mining_type: MiningType.find_by(acronym: 'PoW') # Procura quem tem esse acrononimo - Encontra um elemento que tem PoW
         },
         {
           description: "Ethereum",
           acronym: "ETH",
-          url_image: "https://logosmarcas.net/wp-content/uploads/2020/12/Ethereum-Logo.png"
+          url_image: "https://logosmarcas.net/wp-content/uploads/2020/12/Ethereum-Logo.png",
+          mining_type: MiningType.all.sample # Amostra
         },  
         {
           description: "Dash",
           acronym: "DASH",
-          url_image: "https://cryptologos.cc/logos/dash-dash-logo.png"
+          url_image: "https://cryptologos.cc/logos/dash-dash-logo.png",
+          mining_type: MiningType.all.sample # Amostra
         },
         {
           description: "Iota",
           acronym: "IOT",
-          url_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Iota_logo.png"
+          url_image: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Iota_logo.png",
+          mining_type: MiningType.all.sample # Amostra
         },  
         {
           description: "ZCash",
           acronym: "ZEC",
-          url_image: "https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png"
+          url_image: "https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png",
+          mining_type: MiningType.all.sample # Amostra
         },  
       ]  
     
