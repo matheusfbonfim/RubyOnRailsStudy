@@ -1,6 +1,6 @@
 class CoinsController < ApplicationController
-  # Renderiza um template/layout específico para coins
-  layout "adm"
+  # # Renderiza um template/layout específico para coins
+  # layout "adm"
 
   #################################################3
   # FILTROS
