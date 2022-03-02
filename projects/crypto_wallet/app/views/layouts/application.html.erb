@@ -7,9 +7,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    
-    <%= javascript_include_tag "jquery", "data-turbolinks-track": "reload" %>
-    <%= javascript_include_tag "notify", "data-turbolinks-track": "reload" %>
+
     <%= javascript_importmap_tags %>
   </head>
 
@@ -17,6 +15,6 @@
     <%# Esse yield é a pagina solicitante -> Corpo da requisição que chama %>
     <%= yield %> <%# index.html.erb, edit.html.erb%>
 
-    <script> $.notify("Funcionou", "success") </script>
+    <%# <script> $.notify("Funcionou", "success") </script> %>
   </body>
 </html>
