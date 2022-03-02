@@ -1,23 +1,26 @@
 <%# Notice -> Usado por exemplo quando é apagado alguma moeda, e avisa/noticiar o que aconteceu %>
 <p style="color: green"><%= notice %></p>
 
-<p> <strong> Data: <%= Date.today %> </strong> </p>
+<p> <strong> Data: <%= l(Date.today) %> </strong> </p>
 
 <h1 style = "text-align:center;"><%= nome_aplicacao %></h1>
 
 <div class="container-main">
 
-    <h1>Coins</h1>
+    <h1><%=t("tables.title-coin")%></h1>
+
+    <h2> <%= cookies[:curso] %> </h2>
+    <h2> <%= session[:curso] %> </h2>
 
     <%# Table %>
     <table class="table-coins">
       <thead>
         <tr>
-          <th colspan="1">DESCRIÇÃO</th>
-          <th colspan="1">SIGLA</th>
-          <th colspan="1">IMAGEM</th>
-          <th colspan="1">MINING TYPE</th>
-          <th colspan="3">OPÇÕES</th>
+          <th colspan="1"><%= @coins.human_attribute_name(:description) %></th>
+          <th colspan="1"><%= @coins.human_attribute_name(:acronym) %></th>
+          <th colspan="1"><%= @coins.human_attribute_name(:url_image) %></th>
+          <th colspan="1"><%= @coins.human_attribute_name(:mining_type) %></th>
+          <th colspan="3"><%= t("tables.column-mining-options") %></th>
         </tr>  
       </thead>
 
@@ -29,9 +32,9 @@
               <td><%=coin.acronym%></td>
               <td><%=image_tag coin.url_image, size: "70x50" %></td>
               <td><%=coin.mining_type.description%></td>
-              <td><%= link_to 'Mostrar', coin %></td>
-              <td><%= link_to 'Editar', edit_coin_path(coin) %></td>
-              <td> <%= button_to "Destroy this coin", coin, method: :delete, data: {confirm: "Tem certeza que quer excluir?"} %> </td>
+              <td><%= link_to t('links.show'), coin %></td>
+              <td><%= link_to t('links.edit'), edit_coin_path(coin) %></td>
+              <td> <%= button_to t('links.delete'), coin, method: :delete, data: {confirm: "Tem certeza que quer excluir?"} %> </td>
             </tr>
         <% end %> 
       </tbody>
@@ -42,11 +45,11 @@
 
     <div class="container-options">
       <div class="button">
-      <%= link_to "New coin", new_coin_path %>
+      <%= link_to t("links.new-coin"), new_coin_path %>
       </div>
 
       <div class="button">
-      <%= link_to "Back to Home", welcome_index_path %>
+      <%= link_to t("links.back-to-home"), welcome_index_path %>
       </div>
     </div>
 

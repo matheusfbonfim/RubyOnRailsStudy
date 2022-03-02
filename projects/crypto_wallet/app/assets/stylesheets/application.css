@@ -20,7 +20,7 @@
     font-family: 'JetBrains Mono', monospace;
  }
 
-table {
+table{
   border-collapse: separate;
   border-spacing: 50px 0;
   text-align: center;
@@ -40,10 +40,11 @@ td{
   padding: 10px;
 }
 
-.container-main{
+.container-main .container-main-mining-types{
   display: flex;
   flex-direction: column;
 }
+
 
 .container-options{
   display: flex;

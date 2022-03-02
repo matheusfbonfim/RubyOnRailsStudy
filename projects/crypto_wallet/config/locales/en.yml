@@ -31,3 +31,18 @@
 
 en:
   hello: "Hello world"
+  actual_locale: "English (International)"
+  tables:
+    title-coin: "Coins"
+    title-mining-type: "Mining Types"
+    column-description: "DESCRIPTION"
+    column-acronym: "ACRONYM"
+    column-image: "IMAGE"
+    column-mining-type: "MINING TYPE"
+    column-mining-options: "OPTIONS"
+  links: 
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    new-coin: "New coin"
+    back-to-home: "Back to Home"
