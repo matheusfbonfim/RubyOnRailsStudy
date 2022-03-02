@@ -1,0 +1,33 @@
+<p> <%= link_to 'Português', root_path(locale: 'pt-BR')%> </p>
+<p> <%= link_to 'English', root_path(locale: 'en')%> </p>
+
+
+<h1>Seja Bem-Vindo!!</h1>
+
+<p> O idioma utilizado nessa aplicação é <strong><%= t('actual_locale') %></strong> </p>
+
+<%# Traduz conforme a lingua e a chave -> I18n.l -> Localize %>
+<%# Usar I18n.l(Date.today), mas estando na view pode ser usado diretamente l() %>
+<p> <strong> Data: <%= l(Date.today) %> </strong> </p>
+
+<%# Traduz conforme a lingua e a chave -> I18n.t -> Translate %>
+<%# Faz a tradução conforme a language do I18n %>
+<%# Usar I18n.t('hello'), mas estando na view pode ser usado diretamente t() %>
+<p> <%= t('hello')%> </p>
+
+<%######################################################################  %>
+<%# Chamando o partial menu %>
+<%# Procura uma partial chamada por _menu e renderiza essa parte aqui %>
+<%= render("menu") %> 
+
+<p> 
+  Você está no ambiente de <strong><%=ambiente_rails%></strong>
+</p>
+
+<p> 
+  Eu sou uma variável de instância/sessão <strong style="color:red;"> <%= @my_name %> </strong>
+</p>
+
+<p> 
+  Meu curso é o curso de <strong style="color: blue;"> <%=@curso%> </strong>
+</p>

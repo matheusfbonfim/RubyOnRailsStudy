@@ -1,0 +1,10 @@
+<h1>New Coin</h1>
+
+<%# Renderiza a partial form, passando a variavel @coin que tem o model e seus atributos vazios %>
+<%= render("form", coin: @coin) %>
+
+<br>
+
+<div>
+  <%= link_to "Back to coins", coins_path %>
+</div>
