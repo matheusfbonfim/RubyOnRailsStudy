@@ -49,5 +49,14 @@ en:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
-    new: "New"
     back-to-home: "Back to Home"
+    back: "Back"
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining Type"
+  editing:
+    coin: "Edit Coin"
+    mining_type: "Editing Mining Type"
+  showing:
+    coin: "Show Coin"
+    mining_type: "Show Mining Type" 
