@@ -36,6 +36,7 @@ en:
   messages:
     welcome: "This is the Crypto Wallet, an app that you can register and keep up with your cryptocoins."
     menu: "To start, choose an option below:"
+    confirm: "Are you sure?"
   tables:
     title-coin: "Coins"
     title-mining-type: "Mining Types"
@@ -48,5 +49,5 @@ en:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
-    new-coin: "New coin"
+    new: "New"
     back-to-home: "Back to Home"

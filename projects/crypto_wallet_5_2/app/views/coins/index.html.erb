@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Coins</h1>
+<h1><%=Coin.model_name.human(count: @coins.count)%></h1>
 
 <table class="table table-hover">
   <thead>
@@ -23,7 +23,7 @@
           <td><%=coin.mining_type.description%></td>
           <td><%= link_to t('links.show'), coin %></td>
           <td><%= link_to t('links.edit'), edit_coin_path(coin) %></td>
-          <td><%= link_to t('links.delete'), coin, method: "delete", data: {confirm: "Are you sure?"}%> </td>
+          <td><%= link_to t('links.delete'), coin, method: "delete", data: {confirm: t('messages.confirm')}%> </td>
         </tr>
     <% end %> 
   </tbody>
@@ -33,10 +33,10 @@
 
 <div class="container-options">
   <div class="button">
-  <%= link_to t("links.new-coin"), new_coin_path %>
+  <%= link_to t("links.new"), new_coin_path, class: "btn btn-primary btn-lg btn-block" %>
   </div>
 
   <div class="button">
-  <%= link_to t("links.back-to-home"), welcome_index_path %>
+  <%= link_to t("links.back-to-home"), welcome_index_path, class: "btn btn-primary btn-lg btn-block" %>
   </div>
 </div>

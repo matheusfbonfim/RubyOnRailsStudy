@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1 style="text-align:center; text-transform:uppercase;"> <%=t("tables.title-mining-type")%> </h1>
+<h1><%=MiningType.model_name.human(count:@mining_types.count)%></h1>
 
 <table class="table table-hover">
   <thead>
@@ -19,7 +19,7 @@
             <td><%=mining_type.acronym%></td>
             <td><%= link_to t('links.show'), mining_type %></td>
             <td><%= link_to t('links.edit'), edit_mining_type_path(mining_type) %></td>
-            <td> <%= button_to t('links.delete'), mining_type, method: :delete, data: {confirm: "Tem certeza que quer excluir?"} %> </td>
+            <td> <%= button_to t('links.delete'), mining_type, method: :delete, data: {confirm: t('messages.confirm')} %> </td>
           </tr>
       <% end %> 
   </tbody>
@@ -29,10 +29,10 @@
 
 <div class="container-options">
   <div class="button">
-  <%= link_to t("links.new-mining-type"), new_mining_type_path %>
+  <%= link_to t("links.new-mining-type"), new_mining_type_path, class: "btn btn-primary btn-lg btn-block" %>
   </div>
 
   <div class="button">
-  <%= link_to t("links.back-to-home"), welcome_index_path %>
+  <%= link_to t("links.back-to-home"), welcome_index_path, class: "btn btn-primary btn-lg btn-block" %>
   </div>
 </div>
