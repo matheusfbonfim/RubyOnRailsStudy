@@ -10,6 +10,9 @@
     <%= stylesheet_link_tag params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
     
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# São elementos fora do application? -> Necessário pre compilar os dois %>
+    <%= javascript_include_tag 'jquery', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'notify', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
@@ -17,6 +20,6 @@
     <%# Esse yield é a pagina solicitante -> Corpo da requisição que chama %>
     <%= yield %> <%# index.html.erb, edit.html.erb%>
 
-    <%# <script> $.notify("Funcionou", "success") </script> %>
+    <script> $.notify("Funcionou", "success") </script>
   </body>
 </html>
