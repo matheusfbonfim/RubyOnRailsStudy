@@ -1,0 +1,1155 @@
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-02-22 16:30:46.954470"], ["updated_at", "2022-02-22 16:30:46.954470"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "23ca68f8d4a33185ab02688ca81bba4da5971dcf"], ["created_at", "2022-02-22 16:30:46.960562"], ["updated_at", "2022-02-22 16:30:46.960562"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 14:53:45 -0300
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 14:53:46 -0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 14:53:46 -0300
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 14:53:46 -0300
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 14:59:21 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 3201)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 14:59:22 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 14:59:22 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 14:59:22 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:05:53 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 3201)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:05:53 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:05:53 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:05:53 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:06:28 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 3201)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:06:28 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:06:28 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:06:28 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:06:48 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 3201)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:06:48 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 240)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:06:48 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:06:48 -0300
+Processing by MarketListsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 238)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:07:38 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 151.7ms | Allocations: 85732)
+Completed 200 OK in 165ms (Views: 155.5ms | ActiveRecord: 0.0ms | Allocations: 90921)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:07:39 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1571)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:07:39 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:07:39 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:27:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | Allocations: 32414)
+Completed 200 OK in 70ms (Views: 65.3ms | ActiveRecord: 0.0ms | Allocations: 35288)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:27:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1571)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:27:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:27:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:30:32 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 62.8ms | Allocations: 32240)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.0ms | Allocations: 35114)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:30:32 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1571)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:30:32 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:30:32 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:43:04 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 32237)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 0.0ms | Allocations: 35110)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:43:04 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1571)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:43:04 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:43:04 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:51:23 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 32407)
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 0.0ms | Allocations: 35281)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:51:23 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1571)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:51:23 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:51:23 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:52:06 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 65.7ms | Allocations: 32237)
+Completed 200 OK in 77ms (Views: 69.4ms | ActiveRecord: 0.0ms | Allocations: 35111)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:52:07 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1291)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1571)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:52:07 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1291)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:52:07 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:54:42 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 32419)
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 0.0ms | Allocations: 35292)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-22 15:54:42 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 1302)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 1582)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:54:42 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-22 15:54:42 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "market_lists"[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "market_lists" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "market_date" date NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220222191050)[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-02-23 11:22:15.051553"], ["updated_at", "2022-02-23 11:22:15.051553"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "f65c68a3958ea506524b59936be6944902b1c0e3"], ["created_at", "2022-02-23 11:22:15.057738"], ["updated_at", "2022-02-23 11:22:15.057738"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (980190962, '2022-02-23 11:22:15.467948', '2022-02-23 11:22:15.467948');
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (298486374, '2022-02-23 11:22:15.467948', '2022-02-23 11:22:15.467948')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.3ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (980190962, '2022-02-23 11:22:15.473938', '2022-02-23 11:22:15.473938');
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (298486374, '2022-02-23 11:22:15.473938', '2022-02-23 11:22:15.473938')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.3ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (980190962, '2022-02-23 11:22:15.477780', '2022-02-23 11:22:15.477780');
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (298486374, '2022-02-23 11:22:15.477780', '2022-02-23 11:22:15.477780')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (980190962, '2022-02-23 11:22:15.481140', '2022-02-23 11:22:15.481140');
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (298486374, '2022-02-23 11:22:15.481140', '2022-02-23 11:22:15.481140')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.3ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (980190962, '2022-02-23 11:22:15.490858', '2022-02-23 11:22:15.490858');
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (298486374, '2022-02-23 11:22:15.490858', '2022-02-23 11:22:15.490858')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.2ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (980190962, '2022-02-23 11:22:15.495290', '2022-02-23 11:22:15.495290');
+INSERT INTO "market_lists" ("id", "created_at", "updated_at") VALUES (298486374, '2022-02-23 11:22:15.495290', '2022-02-23 11:22:15.495290')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (980190962, '2021-01-01', '2022-02-23 11:26:59.001139', '2022-02-23 11:26:59.001139');
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (298486374, '2020-01-01', '2022-02-23 11:26:59.001139', '2022-02-23 11:26:59.001139')[0m
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 08:26:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 32582)
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 0.0ms | Allocations: 35456)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_have_new_button_on_market_list_index
+--------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 08:26:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1571)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 08:26:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1291)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 08:26:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 08:26:59 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1291)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1570)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_fill_name_and_date_on_new_form
+--------------------------------------------------------------------------
+Started GET "/market_lists/new" for 127.0.0.1 at 2022-02-23 08:26:59 -0300
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.5ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (980190962, '2021-01-01', '2022-02-23 12:22:06.977053', '2022-02-23 12:22:06.977053');
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (298486374, '2020-01-01', '2022-02-23 12:22:06.977053', '2022-02-23 12:22:06.977053')[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:22:06 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 32698)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.0ms | Allocations: 35572)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_fill_name_and_date_on_new_form
+--------------------------------------------------------------------------
+Started GET "/market_lists/new" for 127.0.0.1 at 2022-02-23 09:22:07 -0300
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_have_new_button_on_market_list_index
+--------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:22:07 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1598)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:22:07 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:22:07 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:22:07 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.2ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (980190962, '2021-01-01', '2022-02-23 12:25:02.574065', '2022-02-23 12:25:02.574065');
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (298486374, '2020-01-01', '2022-02-23 12:25:02.574065', '2022-02-23 12:25:02.574065')[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:25:02 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 32472)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 35346)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:25:02 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1318)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1598)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_have_new_button_on_market_list_index
+--------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:25:02 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:25:02 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:25:02 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1318)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_fill_name_and_date_on_new_form
+--------------------------------------------------------------------------
+Started GET "/market_lists/new" for 127.0.0.1 at 2022-02-23 09:25:02 -0300
+Processing by MarketListsController#new as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 436)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (980190962, '2021-01-01', '2022-02-23 12:25:43.260956', '2022-02-23 12:25:43.260956');
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (298486374, '2020-01-01', '2022-02-23 12:25:43.260956', '2022-02-23 12:25:43.260956')[0m
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:25:43 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 32369)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 35243)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:25:43 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1598)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_have_new_button_on_market_list_index
+--------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:25:43 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_fill_name_and_date_on_new_form
+--------------------------------------------------------------------------
+Started GET "/market_lists/new" for 127.0.0.1 at 2022-02-23 09:25:43 -0300
+Processing by MarketListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/new.html.erb within layouts/application
+  Rendered market_lists/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 84)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1370)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1703)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:25:43 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:25:43 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.3ms)[0m  [1m[31mDELETE FROM "market_lists";
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (980190962, '2021-01-01', '2022-02-23 12:55:09.693874', '2022-02-23 12:55:09.693874');
+INSERT INTO "market_lists" ("id", "market_date", "created_at", "updated_at") VALUES (298486374, '2020-01-01', '2022-02-23 12:55:09.693874', '2022-02-23 12:55:09.693874')[0m
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_fill_name_and_date_on_new_form
+--------------------------------------------------------------------------
+Started GET "/market_lists/new" for 127.0.0.1 at 2022-02-23 09:55:09 -0300
+Processing by MarketListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/new.html.erb within layouts/application
+  Rendered market_lists/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1237)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1285)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4105)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------
+MarketListsControllerTest: test_User_should_have_new_button_on_market_list_index
+--------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:55:09 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 246)
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 32129)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms | Allocations: 32499)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_specific_url
+-----------------------------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:55:09 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_root
+------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:55:09 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_you_don't_have_any_list_if_don't_have_any_list_if_access_root
+---------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2022-02-23 09:55:09 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1318)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------------------
+MarketListsControllerTest: test_Should_show_Your_Market_List_as_title_if_access_specific_url
+--------------------------------------------------------------------------------------------
+Started GET "/market_lists" for 127.0.0.1 at 2022-02-23 09:55:09 -0300
+Processing by MarketListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering market_lists/index.html.erb within layouts/application
+  Rendered market_lists/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1318)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1597)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
