@@ -1,5 +1,4 @@
 class Pessoa
-  
   # Construtor 
   def initialize(cont = 0)
       cont.times do |i|
@@ -10,13 +9,12 @@ class Pessoa
 
   # Não coloca a saida, a ultima saida é o retorno do método
   def falar(name = "Fulano", idade = 0)
-      "Ola, #{name}, tu é top! Ta novinho em com #{idade} anos"
+    "Ola, #{name}, tu é top! Ta novinho em com #{idade} anos"
   end 
 
   def falar2(name = "Pessoal")
-      "Ola, #{name}"
+    "Ola, #{name}"
   end
-
 end
 
 p = Pessoa.new(5)

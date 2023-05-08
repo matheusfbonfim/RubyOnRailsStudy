@@ -7,8 +7,10 @@ nome = gets.chomp
 puts "O nome da pessoa é #{nome}"
 puts "####################################################"
 
+puts "O tipo de nome é #{nome.class}"
+
 # Consegue-se verificar todos os detalhes a variavel
-puts "Com o inspect >> " +nome.inspect
+puts "Com o inspect >> " + nome.inspect
 
 puts "####################################################"
 

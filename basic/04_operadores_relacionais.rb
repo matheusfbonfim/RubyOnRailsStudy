@@ -11,3 +11,6 @@ puts "O resto da divisão é #{a}"
 
 a = 20 ** 2
 puts "A potencia da divisão é #{a}"
+
+a = 20 % 2
+puts "A modulo da divisão é #{a}"

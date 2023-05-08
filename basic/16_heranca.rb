@@ -16,7 +16,7 @@ class PessoaJuridica < Pessoa
     attr_accessor :cnpj
 
     def pagar_fornecedor
-        puts ("Pagando fornecedor....")
+      "Pagando fornecedor...."
     end 
 end
 
@@ -28,6 +28,7 @@ p1.email = "jackson@gmail.com"
 # Getters
 puts p1.nome
 puts p1.email
+
 puts ("--------------------")
 
 # ----------------------------------------
@@ -42,9 +43,9 @@ puts p2.email
 puts p2.cpf
 puts ("--------------------")
 
-
 # ----------------------------------------
 p3 = PessoaJuridica.new
+
 # Setters
 p3.nome = "Matheus"
 p3.email = "joao@joao.com"
@@ -53,3 +54,4 @@ p3.cnpj = "123456789"
 puts p3.nome
 puts p3.email 
 puts p3.cnpj
+puts p3.pagar_fornecedor

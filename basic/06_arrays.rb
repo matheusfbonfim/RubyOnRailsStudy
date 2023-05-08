@@ -3,7 +3,7 @@
 v = [1,3,5,6,7,9]
 
 v.each do |item|
-    puts item
+  puts item
 end
 
 ################################
@@ -17,7 +17,7 @@ puts "VETOR V1"
 puts v1.size
 
 v1.each do |item|
-    puts item
+  puts item
 end 
 
 ################################
@@ -41,5 +41,7 @@ vector = [[1, 2, 3, 4],[5, 6, 7, 8],[9, 10, 11, 12]]
 
 vector.each do |item|
   puts item
-  puts 
+  vector.each do |item2|
+    puts item2
+  end
 end 

@@ -5,6 +5,8 @@ y = 2.3999999
 z = "Rails 5.x"
 
 puts "O tipo de X eh: #{x.class}"
+puts "Object ID do X: #{x.object_id}"
+
 puts "O tipo de Y é #{y.class}"
 puts "O tipo de Z é #{z.class}"
 

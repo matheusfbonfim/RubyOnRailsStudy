@@ -3,7 +3,7 @@ class Pessoa
   attr_accessor :nome
 
   # def initialize(nome = "teste")
-  #     @nome = nome
+  #   @nome = nome
   # end 
 
   # def nome(nome)
@@ -11,7 +11,7 @@ class Pessoa
   # end 
 
   # def nome
-  #     @nome
+  #   @nome
   # end 
 end
 

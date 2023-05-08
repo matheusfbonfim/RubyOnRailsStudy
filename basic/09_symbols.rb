@@ -5,6 +5,7 @@ puts "Jackson".object_id  # Mostra o identificador/endereço da string
 puts "Jackson".object_id  # Mostra o identificador/endereço da string
 puts "Jackson".object_id  # Mostra o identificador/endereço da string
 puts "Jackson".object_id  # Mostra o identificador/endereço da string
+puts "Jackson".class
 puts "=================="
 
 # String imutaveis - Symbols -> É um identificador

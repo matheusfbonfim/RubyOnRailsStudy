@@ -1,7 +1,7 @@
 module Pagamento
   class Visa
-      def pagando
-        "pagando..."
-      end 
+    def pagando
+      "pagando..."
+    end 
   end 
 end
