@@ -1,6 +1,7 @@
 class AdminsBackoffice::AdminsController < AdminsBackofficeController
+  before_action :password_verify, only: [:update]
   before_action :set_resource, only: [:edit, :update]
-  
+ 
   def index
     @admins = Admin.all
   end
@@ -13,6 +14,14 @@ class AdminsBackoffice::AdminsController < AdminsBackofficeController
       redirect_to admins_backoffice_admins_path, notice: "Administrador atualizado com sucesso!"
     else
       render :edit
+    end
+  end
+
+  private
+
+  def password_verify
+    if params[:admin][:password].blank? && params[:admin][:password_confirmation].blank?
+      params[:admin].extract!(:password, :password_confirmation)
     end
   end
 
