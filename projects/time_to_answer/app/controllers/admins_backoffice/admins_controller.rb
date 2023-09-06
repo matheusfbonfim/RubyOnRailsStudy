@@ -3,7 +3,7 @@ class AdminsBackoffice::AdminsController < AdminsBackofficeController
   before_action :set_resource, only: [:edit, :update, :destroy]
  
   def index
-    @admins = Admin.all.page(params[:page])
+    @admins = Admin.all.page(paramsparams[:page])
   end
 
   def new
