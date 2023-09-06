@@ -1,4 +1,4 @@
-class AdminsBackoffice::QuestionsController <AdminsBackofficeController
+class AdminsBackoffice::QuestionsController < AdminsBackofficeController
   before_action :set_question, only: [:edit, :update, :destroy]
    
   def index
