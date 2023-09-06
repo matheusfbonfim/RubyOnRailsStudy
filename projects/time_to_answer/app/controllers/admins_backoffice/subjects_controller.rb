@@ -1,4 +1,4 @@
-class AdminsBackoffice::SubjectsController < ApplicationController
+class AdminsBackoffice::SubjectsController < AdminsBackofficeController
   before_action :set_resource, only: [:edit, :update, :destroy]
  
   def index
