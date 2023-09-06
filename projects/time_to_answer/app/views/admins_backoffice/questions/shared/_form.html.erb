@@ -34,7 +34,7 @@
 
                 <div class="form-group">
                   <%= form.label :subject %>
-                  <%= form.collection_select(:subject_id, Subject.all, :id, :description, {prompt: "Selecione um assunto"}, class: 'form-control') %> 
+                  <%= form.collection_select(:subject_id, @subjects, :id, :description, {prompt: "Selecione um assunto"}, class: 'form-control') %> 
                 </div>
 
 
