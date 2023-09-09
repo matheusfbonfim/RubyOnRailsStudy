@@ -30,7 +30,7 @@
                 admins_backoffice_admin_path(admin), 
                 method: :delete, 
                 class: 'btn btn-danger btn-circle',
-                data: { confirm: 'Deseja realmente excluir esse administrador ?'}
+                data: { confirm: t('messages.confirm_with', item: admin.email.truncate(15))}
               ) do %>
             <i class="fa fa-trash"></i>
           <% end %>
