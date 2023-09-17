@@ -15,6 +15,6 @@ class Question < ApplicationRecord
   }
 
   scope :last_questions, -> (page) {
-    includes(:answers).order('created_at desc').page(params[:page])
+    includes(:answers).order('created_at desc').page(page)
   }
 end
