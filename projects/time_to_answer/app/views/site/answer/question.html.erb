@@ -1,3 +1,9 @@
-<h1>
-  O ID da resposta selecionada é: <%= params[:answer] %>
-</h1>
+<% if @answer.correct %>
+  <div class="alert alert-success" role="alert">
+    <strong>Parabéns!</strong> Você acertou a questão!
+  </div>
+<% else %>
+  <div class="alert alert-danger" role="alert">
+    <strong>Que pena!</strong> Você errou a questão!
+  </div>
+<% end %>
