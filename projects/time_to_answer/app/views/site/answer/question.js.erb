@@ -1,0 +1,25 @@
+var button = document.getElementById("submit_<%= @answer.question_id %>");
+
+button.classList.remove("btn-default");
+button.classList.remove("btn-success");
+button.classList.remove("btn-danger");
+
+if (<%= @answer.correct %>) {
+  button.classList.add("btn-success");
+
+  $.bootstrapGrowl('Acertoou Miseravii', {
+    type: 'success', // (null, 'info', 'danger', 'success')
+    align: 'right', // ('left', 'right', or 'center')
+    allow_dismiss: true, // If true then will display a cross to close the popup.
+    stackup_spacing: 10 // spacing between consecutively stacked growls.
+  });
+} else {
+  button.classList.add("btn-danger");
+
+  $.bootstrapGrowl('Ihh, errou', {
+    type: 'danger', // (null, 'info', 'danger', 'success')
+    align: 'right', // ('left', 'right', or 'center')
+    allow_dismiss: true, // If true then will display a cross to close the popup.
+    stackup_spacing: 10 // spacing between consecutively stacked growls.
+  });
+}
