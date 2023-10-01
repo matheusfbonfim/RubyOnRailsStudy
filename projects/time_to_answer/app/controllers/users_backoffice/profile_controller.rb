@@ -9,7 +9,12 @@ class UsersBackoffice::ProfileController < UsersBackofficeController
   def update
     if @user.update(params_user)
       bypass_sign_in(@user)
-      redirect_to users_backoffice_profile_path, notice: "Usuário atualizado com sucesso!"
+
+      if params_user[:user_profile_attributes][:avatar].present?
+        redirect_to users_backoffice_welcome_index_path, notice: "Usuário atualizado com sucesso! Por favor, faça login novamente."
+      else
+        redirect_to users_backoffice_profile_path, notice: "Usuário atualizado com sucesso!"
+      end
     else
       render :edit
     end    
@@ -32,7 +37,8 @@ class UsersBackoffice::ProfileController < UsersBackofficeController
         :id,
         :address,
         :gender,
-        :birthdate
+        :birthdate,
+        :avatar
       ]
     )
   end
