@@ -34,6 +34,12 @@
   <% end %>
 <% end %>
 
-<div class='text-center'>
-  <%= paginate @questions %>
-</div>
+<% if user_signed_in? %>
+  <div class='text-center'>
+    <%= paginate @questions %>
+  </div>
+<% else %>
+  <div class="alert alert-warning">
+    Para responder as questões, <%= link_to('faça login', new_user_session_path) %> ou <%= link_to('cadastre-se', new_user_registration_path) %>
+  </div>
+<% end %>
