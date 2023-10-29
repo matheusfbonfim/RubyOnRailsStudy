@@ -36,7 +36,8 @@ class UsersBackoffice::ProfileController < UsersBackofficeController
         :address,
         :gender,
         :birthdate,
-        :avatar
+        :avatar,
+        :zip_code
       ]
     )
   end
